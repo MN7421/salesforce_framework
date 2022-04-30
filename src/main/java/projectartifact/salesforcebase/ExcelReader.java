@@ -1,0 +1,49 @@
+package projectartifact.salesforcebase;
+
+import java.io.FileInputStream;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelReader {
+	public static ArrayList getData(String filePath){
+		ArrayList data = new ArrayList();
+		
+		try {
+
+			FileInputStream fis = new FileInputStream(filePath);
+		XSSFWorkbook workbook 	= new XSSFWorkbook(fis);
+		 XSSFSheet sheet = workbook.getSheetAt(0);
+         Iterator<Row> itr = sheet.iterator();
+
+		 while(itr.hasNext()) {
+			 Row row = itr.next();
+			
+			 
+			 Iterator<org.apache.poi.ss.usermodel.Cell> cellitr = row.cellIterator();
+			while(cellitr.hasNext()) {
+			org.apache.poi.ss.usermodel.Cell cell = cellitr.next();
+			data.add(cell.getStringCellValue());
+			
+			
+			
+	}
+		 }
+		 return data;
+		}
+			catch (Exception e) {
+			e.printStackTrace();
+			}
+		return null ; 
+	}
+	}
+			
+	
+
+		
+			
+

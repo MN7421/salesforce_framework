@@ -1,0 +1,4 @@
+Username=//*[@id='username']
+Password=//*[@id='password']
+LoginButton = //*[@id='Login']
+firstname=UserFirstName

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="34199" started-at="2022-04-28T17:58:42 IST" finished-at="2022-04-28T17:59:16 IST">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="34199" started-at="2022-04-28T17:58:42 IST" finished-at="2022-04-28T17:59:16 IST">
+      <class name="projectartifact.salesforce.LoginTest">
+        <test-method status="PASS" signature="logintest()[pri:0, instance:projectartifact.salesforce.LoginTest@48503868]" name="logintest" duration-ms="24777" started-at="2022-04-28T17:58:52 IST" finished-at="2022-04-28T17:59:16 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+      </class> <!-- projectartifact.salesforce.LoginTest -->
+      <class name="projectartifact.salesforce.createTrailAccount">
+        <test-method status="PASS" signature="createTrailAccountTest()[pri:0, instance:projectartifact.salesforce.createTrailAccount@26aa12dd]" name="createTrailAccountTest" duration-ms="9382" started-at="2022-04-28T17:58:42 IST" finished-at="2022-04-28T17:58:51 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTrailAccountTest -->
+      </class> <!-- projectartifact.salesforce.createTrailAccount -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
